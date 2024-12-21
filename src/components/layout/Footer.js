@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Container from '../common/Container';
-import { FacebookOutlined, InstagramOutlined } from '@ant-design/icons';
+import { InstagramOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
 import FooterImage1 from '../../images/footer_img1.jpg';
 import FooterImage2 from '../../images/footer_img2.jpg';
@@ -20,7 +20,7 @@ const FootImage = {
 
 const FooterContent = styled.div`
   background-color: #333333;
-  height: 360px;
+  min-height: 360px;
 `;
 
 const FooterSection = styled.div`
@@ -30,6 +30,11 @@ const FooterSection = styled.div`
   margin-top: 40px;
   color: #b0b0b0;
   gap: 120px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
 `;
 
 const FooterText = styled.div`
