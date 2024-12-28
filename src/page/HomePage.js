@@ -1,9 +1,15 @@
 import DefaultLayout from '../components/layout/DefaultLayout';
 import ParallaxContainer from '../components/common/ParallaxContainer';
-import ParallaxImage from '../images/footer_img2.jpg';
+import ParallaxImage from '../images/homePageImages/HomepageBanner.jpg';
 import styled from 'styled-components';
 import { animated, useTransition } from '@react-spring/web';
-import FoodImage1 from '../images/footer_img3.jpg';
+import FoodImage1 from '../images/homePageImages/Food_img1.jpg';
+import FoodImage2 from '../images/homePageImages/Food_img2.jpg';
+import MenuList from '../components/common/MenuList';
+import PastaItems from '../components/item/PastaItem';
+import OtherItems from '../components/item/OtherItems';
+import { Link } from 'react-router-dom';
+import MenuMotion from '../components/common/MenuMotion';
 
 const ParallaxTextBox = styled.div`
   height: 60vh;
@@ -20,8 +26,14 @@ const ParallaxTextBox = styled.div`
   }
 `;
 
-const items = ['給你一個懷舊復古放鬆的空間，', '分享著你的故事，', '我們敘於月下，談於你我。'];
-
+const MenuBox = styled.div`
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 80px;
+`;
 const MenuTitle = styled.div`
   margin-top: 50px;
   font-size: 56px;
@@ -34,57 +46,72 @@ const MenuContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-`;
-
-const MenuSection = styled.div`
-  margin-top: 30px;
-  width: 100%;
-`;
-
-const CategoryTitle = styled.div`
-  font-size: 20px;
-`;
-
-const MenuList = styled.div`
-  margin-top: 20px;
-`;
-
-const MenuItem = styled.div`
-  display: flex;
-  font-size: 15px;
-  margin-top: 20px;
-  justify-content: space-between;
-`;
-
-const ItemDivider = styled.div`
-  border-style: dotted;
-  border-bottom-width: 1px;
-  border-left-width: 0;
-  border-right-width: 0;
-  border-top-width: 0;
-  border-color: #000000;
-  height: 0;
-  width: 30px;
-  margin: 10px 0;
-  flex-grow: 1;
+  margin-top: 80px;
+  gap: 80px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 30px;
+  }
 `;
 
 const MenuImage = styled.div`
-  background-image: url(${FoodImage1});
+  background-image: ${(props) => `url(${props.src})`};
   width: 100%;
-  height: 100%;
+  height: 440px;
   background-position: center;
   background-size: cover;
   box-sizing: border-box;
-  margin-left: 50px;
+  @media (max-width: 768px) {
+    width: 70%;
+    height: 300px;
+  }
+`;
+
+const MenuButton = styled.div`
+  position: relative;
+  display: inline-block;
+  width: 180px;
+  padding: 10px 20px;
+  border: 0.5px solid black;
+  color: black;
+  font-size: 16px;
+  text-decoration: none;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: white;
+  transition: color 0.3s ease;
+  margin-top: 50px;
+  text-align: center;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 0;
+    transition: left 0.3s ease;
+  }
+  &:hover::before {
+    left: 0;
+  }
+  &:hover {
+    color: white;
+  }
+  span {
+    position: relative;
+    z-index: 1;
+  }
 `;
 
 const HomePage = () => {
-  const transitions = useTransition(items, {
+  const ParallaxText = ['給你一個懷舊復古放鬆的空間，', '分享著你的故事，', '我們敘於月下，談於你我。'];
+  const transitions = useTransition(ParallaxText, {
     from: { opacity: 0, transform: 'translateY(-20px)' },
     enter: { opacity: 1, transform: 'translateY(0)' },
-    delay: 500, // 每行淡入的延遲時間
-    trail: 1000, // trail屬性讓動畫依序進行
+    delay: 500,
+    trail: 500,
     config: { duration: 500 },
   });
 
@@ -97,60 +124,30 @@ const HomePage = () => {
           ))}
         </ParallaxTextBox>
       </ParallaxContainer>
-      <MenuTitle>精選菜單</MenuTitle>
-      <MenuContainer>
-        <MenuSection>
-          <CategoryTitle>Pasta | 義大利麵</CategoryTitle>
-          <MenuList>
-            <MenuItem>
-              <div>上天給的禮物</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>敘月招牌烤雞腿義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>不被炒魷魚義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>真的很蝦ㄟ義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>彈牙豬(松阪豬)義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>鮭魚義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>非常牛(牛板腱)義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>海派(綜合海鮮)義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-            <MenuItem>
-              <div>鮮嫩巴沙魚義大利麵</div>
-              <ItemDivider />
-              <div>$230</div>
-            </MenuItem>
-          </MenuList>
-        </MenuSection>
-        <MenuImage />
-      </MenuContainer>
+      <MenuBox>
+        <MenuTitle>精選菜單</MenuTitle>
+        <MenuContainer>
+          <MenuMotion direction={'left'}>
+            <MenuList MenuItems={PastaItems} MenuTitle={'PASTA、RISOTTO | 義大利麵、燉飯'} Sauce={true} />
+          </MenuMotion>
+          <MenuMotion direction={'right'}>
+            <MenuImage src={FoodImage1} />
+          </MenuMotion>
+        </MenuContainer>
+        <MenuContainer>
+          <MenuMotion direction={'left'} reverseOrder={true}>
+            <MenuImage src={FoodImage2} />
+          </MenuMotion>
+          <MenuMotion direction={'right'}>
+            <MenuList MenuItems={OtherItems} MenuTitle={'À LA CARTE | 單點'} />
+          </MenuMotion>
+        </MenuContainer>
+        <Link to="/menu">
+          <MenuButton>
+            <span>瀏覽全部菜單</span>
+          </MenuButton>
+        </Link>
+      </MenuBox>
     </DefaultLayout>
   );
 };
