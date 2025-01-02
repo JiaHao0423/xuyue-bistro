@@ -9,7 +9,7 @@ import ScrollToTop from './components/common/ScrollToTop';
 function App() {
   return (
     <div className="App">
-      <BrowserRouter basename="/xuyue-bistro">
+      <BrowserRouter>
         <ScrollToTop />
         <header className="App-header">
           <Routes>
