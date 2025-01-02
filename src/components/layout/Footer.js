@@ -2,12 +2,12 @@ import styled from 'styled-components';
 import Container from '../common/Container';
 import { InstagramOutlined } from '@ant-design/icons';
 import { Link } from 'react-router-dom';
-import FooterImage1 from '../../images/Footer_img1.jpg';
-import FooterImage2 from '../../images/Footer_img2.jpg';
-import FooterImage3 from '../../images/Footer_img3.jpg';
-import FooterImage4 from '../../images/Footer_img4.jpg';
-import FooterImage5 from '../../images/Footer_img5.jpg';
-import FooterImage6 from '../../images/Footer_img6.jpg';
+import FooterImage1 from '../../images/layout/Footer_img1.jpg';
+import FooterImage2 from '../../images/layout/Footer_img2.jpg';
+import FooterImage3 from '../../images/layout/Footer_img3.jpg';
+import FooterImage4 from '../../images/layout/Footer_img4.jpg';
+import FooterImage5 from '../../images/layout/Footer_img5.jpg';
+import FooterImage6 from '../../images/layout/Footer_img6.jpg';
 
 const FootImage = {
   img1: FooterImage1,
