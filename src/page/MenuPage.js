@@ -32,19 +32,8 @@ const CustomTabs = styled(Tabs)`
     border-radius: 4px;
     transition: all 0.3s ease;
   }
-
   @media (max-width: 768px) {
-    .ant-tabs {
-      flex-direction: column; /* 将 Tabs 设置为垂直排列 */
-    }
-
-    .ant-tabs-nav {
-      flex-direction: column; /* 让标签垂直显示 */
-    }
-
-    .ant-tabs-tab {
-      width: 100%; /* 标签填满容器宽度 */
-    }
+    width: 90vw;
   }
 `;
 
