@@ -5,18 +5,10 @@ import ContactsPage from './page/ContactsPage';
 import AboutUsPage from './page/AboutUsPage';
 import ParkingPage from './page/ParkingPage';
 import ScrollToTop from './components/common/ScrollToTop';
-import { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  body {
-    font-family: "Helvetica", "Arial","Heiti TC","微軟正黑體", sans-serif;
-  }
-`;
 
 function App() {
   return (
     <div className="App">
-      <GlobalStyle />
       <BrowserRouter>
         <ScrollToTop />
         <header className="App-header">
