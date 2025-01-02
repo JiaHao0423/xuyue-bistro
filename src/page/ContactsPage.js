@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import DefaultLayout from '../components/layout/DefaultLayout';
 import BannerImage from '../images/contactsImages/Banner_img.jpg';
-import { AlipayCircleFilled, HomeFilled, InstagramOutlined, PhoneFilled } from '@ant-design/icons';
+import { HomeFilled, InstagramOutlined, PhoneFilled } from '@ant-design/icons';
 import ParallaxContainer from '../components/common/ParallaxContainer';
 import GoogleMapBox from '../components/common/GoogleMapBox';
 import { Link } from 'react-router-dom';
