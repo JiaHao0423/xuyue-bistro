@@ -21,6 +21,7 @@ const FootImage = {
 const FooterContent = styled.div`
   background-color: #333333;
   min-height: 360px;
+  margin-top: 80px;
 `;
 
 const FooterSection = styled.div`

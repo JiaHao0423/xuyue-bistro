@@ -6,8 +6,8 @@ import { animated, useTransition } from '@react-spring/web';
 import FoodImage1 from '../images/homePageImages/Food_img1.jpg';
 import FoodImage2 from '../images/homePageImages/Food_img2.jpg';
 import MenuList from '../components/common/MenuList';
-import PastaItems from '../components/item/PastaItem';
-import OtherItems from '../components/item/OtherItems';
+import PastaItems from '../data/Pasta';
+import OtherItems from '../data/OtherItems';
 import { Link } from 'react-router-dom';
 import MenuMotion from '../components/common/MenuMotion';
 
