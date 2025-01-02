@@ -20,8 +20,9 @@ const FootImage = {
 
 const FooterContent = styled.div`
   background-color: #333333;
-  min-height: 360px;
+  min-height: 400px;
   margin-top: 80px;
+  padding-bottom: 20px;
 `;
 
 const FooterSection = styled.div`
@@ -73,6 +74,7 @@ const FooterImagesBox = styled.div`
   flex-wrap: wrap;
   gap: 10px;
   margin-top: 20px;
+  margin-bottom: 30px;
 `;
 
 const Image = styled.div`
