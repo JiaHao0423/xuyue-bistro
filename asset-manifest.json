@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/xuyue-bistro/static/css/main.321f33b0.css",
+    "main.js": "/xuyue-bistro/static/js/main.2b021cf5.js",
+    "static/js/488.da54f0c8.chunk.js": "/xuyue-bistro/static/js/488.da54f0c8.chunk.js",
+    "static/media/Pizza_img1.jpg": "/xuyue-bistro/static/media/Pizza_img1.583870a83f95cdb94cfe.jpg",
+    "static/media/Food_img1.jpg": "/xuyue-bistro/static/media/Food_img1.f9b02797459cb5eebfd9.jpg",
+    "static/media/AboutUs_img1.jpg": "/xuyue-bistro/static/media/AboutUs_img1.78d10f9b74d5c8342db9.jpg",
+    "static/media/Footer_img5.jpg": "/xuyue-bistro/static/media/Footer_img5.8818ba0e44abdec0ec25.jpg",
+    "static/media/Banner_img.jpg": "/xuyue-bistro/static/media/Banner_img.49cce02b937628f21678.jpg",
+    "static/media/Footer_img1.jpg": "/xuyue-bistro/static/media/Footer_img1.49cce02b937628f21678.jpg",
+    "static/media/Food_img2.jpg": "/xuyue-bistro/static/media/Food_img2.80987fca2eeb52d8846e.jpg",
+    "static/media/Steak_img1.jpg": "/xuyue-bistro/static/media/Steak_img1.80987fca2eeb52d8846e.jpg",
+    "static/media/Parking_img.jpg": "/xuyue-bistro/static/media/Parking_img.00a1218f8fcbcad0e5b9.jpg",
+    "static/media/Drink_img1.jpg": "/xuyue-bistro/static/media/Drink_img1.387ed3b01b3773b2afce.jpg",
+    "static/media/Footer_img6.jpg": "/xuyue-bistro/static/media/Footer_img6.280b7e0c4b4614cbeb98.jpg",
+    "static/media/Footer_img3.jpg": "/xuyue-bistro/static/media/Footer_img3.0f82165998bf8618adde.jpg",
+    "static/media/AboutUs_img2.jpg": "/xuyue-bistro/static/media/AboutUs_img2.6b823650ec06b05585be.jpg",
+    "static/media/Footer_img4.jpg": "/xuyue-bistro/static/media/Footer_img4.6b823650ec06b05585be.jpg",
+    "static/media/Footer_img2.jpg": "/xuyue-bistro/static/media/Footer_img2.9dbf73a1d3a37a34df7e.jpg",
+    "static/media/HomepageBanner.jpg": "/xuyue-bistro/static/media/HomepageBanner.89f3c4e22b223870e06b.jpg",
+    "static/media/HardDrink_img1.jpg": "/xuyue-bistro/static/media/HardDrink_img1.ffd54374a5005369e686.jpg",
+    "static/media/SparklingDrink_img1.jpg": "/xuyue-bistro/static/media/SparklingDrink_img1.ada69100f5655850ebb1.jpg",
+    "static/media/Logo.png": "/xuyue-bistro/static/media/Logo.5683a623b4f46b53c3cc.png",
+    "index.html": "/xuyue-bistro/index.html",
+    "main.321f33b0.css.map": "/xuyue-bistro/static/css/main.321f33b0.css.map",
+    "main.2b021cf5.js.map": "/xuyue-bistro/static/js/main.2b021cf5.js.map",
+    "488.da54f0c8.chunk.js.map": "/xuyue-bistro/static/js/488.da54f0c8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.321f33b0.css",
+    "static/js/main.2b021cf5.js"
+  ]
+}
