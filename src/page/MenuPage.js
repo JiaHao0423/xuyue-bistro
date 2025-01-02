@@ -32,13 +32,19 @@ const CustomTabs = styled(Tabs)`
     border-radius: 4px;
     transition: all 0.3s ease;
   }
-  .ant-tabs-nav {
-    display: flex;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-  }
-  .ant-tabs-tab {
-    white-space: nowrap;
+
+  @media (max-width: 768px) {
+    .ant-tabs {
+      flex-direction: column; /* 将 Tabs 设置为垂直排列 */
+    }
+
+    .ant-tabs-nav {
+      flex-direction: column; /* 让标签垂直显示 */
+    }
+
+    .ant-tabs-tab {
+      width: 100%; /* 标签填满容器宽度 */
+    }
   }
 `;
 
@@ -71,7 +77,7 @@ const MenuPage = () => {
     <DefaultLayout>
       <MenuContainer>
         <h1>精緻菜單</h1>
-        <CustomTabs defaultActiveKey="0" centered>
+        <CustomTabs defaultActiveKey="0" centered tabPosition="top">
           {Object.keys(menuData).map((category, index) => (
             <TabPane tab={category} key={index}>
               <TabContent>
