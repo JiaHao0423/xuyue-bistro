@@ -20,14 +20,25 @@ const MenuContainer = styled.div`
   align-items: center;
   flex-direction: column;
   margin-bottom: 50px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const CustomTabs = styled(Tabs)`
   .ant-tabs-tab:hover {
-    color: #ff7f50; /* 修改文字颜色 */
-    background: #f0f0f0; /* 添加背景颜色 */
+    color: #ff7f50;
+    background: #f0f0f0;
     border-radius: 4px;
     transition: all 0.3s ease;
+  }
+  .ant-tabs-nav {
+    display: flex;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+  .ant-tabs-tab {
+    white-space: nowrap;
   }
 `;
 

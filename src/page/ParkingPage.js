@@ -4,7 +4,7 @@ import ParkingBannerImage from '../images/parkingImages/Parking_img.jpg';
 import GoogleMapBox from '../components/common/GoogleMapBox';
 
 const ParkingBanner = styled.div`
-  width: 100vh;
+  width: 60%;
   height: 40vh;
   background-image: url(${ParkingBannerImage});
   background-position: center 50%;
@@ -12,6 +12,9 @@ const ParkingBanner = styled.div`
   box-sizing: border-box;
   margin: auto;
   margin-top: 80px;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
 `;
 
 const ParkingSection = styled.div`
@@ -34,6 +37,7 @@ const ParkingInfo = styled.div`
   align-items: center;
 
   @media (max-width: 768px) {
+    width: 70%;
     flex-direction: column;
   }
 `;

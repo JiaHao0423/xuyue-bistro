@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const StyledMotion = styled.div`
   position: relative;
-  width: 500px;
+  width: 200%;
   display: flex;
   justify-content: center;
   opacity: 0;
